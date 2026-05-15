@@ -1,11 +1,16 @@
-
-<link rel="stylesheet" href="https://unpkg.com/@fontsource/outfit/400.css">
-<link rel="stylesheet" href="https://unpkg.com/@fontsource/outfit/600.css">
-<link rel="stylesheet" href="https://unpkg.com/@fontsource/fraunces/700.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NEU Times New Roman Club — Events</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Outfit:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.47.0/tabler-icons.min.css">
 <style>
-*{box-sizing:border-box;}
-#omc{font-family:'Outfit',var(--font-sans);padding:.25rem 0 2.5rem;}
-.hdr{background:#FAEEDA;border-radius:var(--border-radius-lg);padding:16px 20px 14px;margin-bottom:14px;border:1.5px solid #FAC775;}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{background:#FDF9F3;font-family:'Outfit',sans-serif;color:#2C2C2A;min-height:100vh;}
+.wrap{max-width:720px;margin:0 auto;padding:1.25rem 1rem 3rem;}
+.hdr{background:#FAEEDA;border-radius:12px;padding:16px 20px 14px;margin-bottom:14px;border:1.5px solid #FAC775;}
 .hdr-title{font-family:'Fraunces',serif;font-size:24px;font-weight:700;color:#412402;margin:0 0 2px;letter-spacing:-.5px;}
 .hdr-sub{font-size:12px;color:#854F0B;margin:0;line-height:1.5;}
 .tabs{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:14px;}
@@ -16,29 +21,29 @@
 .add-btn{background:#EF9F27;border:none;padding:6px 15px;border-radius:8px;cursor:pointer;font-size:13px;font-family:'Outfit',sans-serif;font-weight:600;color:#412402;transition:all .13s;}
 .add-btn:hover{background:#FAC775;}
 .add-btn.on{background:#BA7517;color:#FAEEDA;}
-.ev{border-radius:var(--border-radius-lg);padding:14px 16px;margin-bottom:10px;border-left:4px solid;}
+.ev{border-radius:12px;padding:14px 16px;margin-bottom:10px;border-left:4px solid;}
 .ev-amber{background:#FAEEDA;border-color:#EF9F27;}
 .ev-coral{background:#FAECE7;border-color:#D85A30;}
 .ev-pink{background:#FBEAF0;border-color:#D4537E;}
 .ev-blue{background:#E6F1FB;border-color:#378ADD;}
 .ev-teal{background:#E1F5EE;border-color:#1D9E75;}
-.ev-name{font-size:16px;font-weight:600;color:var(--color-text-primary);margin:4px 0;}
-.ev-meta{font-size:13px;color:var(--color-text-secondary);margin-bottom:8px;display:flex;flex-wrap:wrap;gap:10px;}
-.ev-desc{font-size:13px;color:var(--color-text-secondary);margin-bottom:10px;}
+.ev-name{font-size:16px;font-weight:600;color:#2C2C2A;margin:4px 0;}
+.ev-meta{font-size:13px;color:#5F5E5A;margin-bottom:8px;display:flex;flex-wrap:wrap;gap:10px;}
+.ev-desc{font-size:13px;color:#5F5E5A;margin-bottom:10px;}
 .tbadge{display:inline-block;font-size:11px;font-weight:600;padding:2px 9px;border-radius:20px;}
 .b-amber{background:#FAEEDA;color:#412402;border:1px solid #EF9F27;}
 .b-coral{background:#FAECE7;color:#4A1B0C;border:1px solid #D85A30;}
 .b-pink{background:#FBEAF0;color:#4B1528;border:1px solid #D4537E;}
 .b-blue{background:#E6F1FB;color:#042C53;border:1px solid #378ADD;}
 .b-teal{background:#E1F5EE;color:#04342C;border:1px solid #1D9E75;}
-.sbox{background:rgba(255,255,255,.6);border-radius:8px;padding:10px 12px;margin-top:10px;}
+.sbox{background:rgba(255,255,255,.65);border-radius:8px;padding:10px 12px;margin-top:10px;}
 .shead{font-size:12px;font-weight:600;color:#5F5E5A;text-transform:uppercase;letter-spacing:.05em;margin-bottom:7px;display:flex;align-items:center;justify-content:space-between;}
-.spot-pill{font-size:11px;font-weight:500;background:#412402;color:#FAEEDA;border-radius:20px;padding:1px 8px;text-transform:none;letter-spacing:0;}
+.spot-pill{font-size:11px;font-weight:500;background:#412402;color:#FAEEDA;border-radius:20px;padding:1px 8px;}
 .plist{list-style:none;padding:0;margin:0 0 8px;}
 .plist li{font-size:13px;padding:3px 0;display:flex;align-items:center;gap:6px;}
 .plist li .n{font-size:11px;font-weight:600;color:#888780;min-width:16px;}
 .plist li.me{font-weight:600;color:#0F6E56;}
-.att-names{font-size:13px;color:var(--color-text-secondary);margin-bottom:8px;line-height:1.5;}
+.att-names{font-size:13px;color:#5F5E5A;margin-bottom:8px;line-height:1.5;}
 .eline{font-size:13px;color:#888780;margin-bottom:8px;font-style:italic;}
 .sbtn{border-radius:8px;padding:5px 13px;font-size:13px;font-family:'Outfit',sans-serif;font-weight:500;cursor:pointer;transition:all .13s;border:1.5px solid;}
 .sbtn-p{background:#E1F5EE;border-color:#1D9E75;color:#085041;}
@@ -53,7 +58,7 @@
 .del-btn{background:none;border:none;cursor:pointer;color:#D85A30;font-size:12px;padding:2px 6px;border-radius:4px;font-family:'Outfit',sans-serif;}
 .del-btn:hover{background:#FAECE7;}
 .cal-hdr{display:flex;align-items:center;justify-content:space-between;margin-bottom:10px;}
-.cal-nav{background:#F1EFE8;border:none;border-radius:8px;width:32px;height:32px;cursor:pointer;display:flex;align-items:center;justify-content:center;color:#5F5E5A;}
+.cal-nav{background:#F1EFE8;border:none;border-radius:8px;width:32px;height:32px;cursor:pointer;display:flex;align-items:center;justify-content:center;color:#5F5E5A;font-size:18px;}
 .cal-nav:hover{background:#D3D1C7;}
 .cal-mname{font-family:'Fraunces',serif;font-size:17px;font-weight:700;color:#412402;}
 .cgrid{display:grid;grid-template-columns:repeat(7,1fr);gap:3px;}
@@ -62,16 +67,16 @@
 .ccell:hover{background:rgba(0,0,0,.04);}
 .ccell.tod{background:#FAEEDA;border-color:#FAC775;}
 .ccell.sel{background:#E1F5EE;border-color:#1D9E75;}
-.dnum{font-size:12px;font-weight:600;color:var(--color-text-secondary);display:block;text-align:right;line-height:1;margin-bottom:2px;}
+.dnum{font-size:12px;font-weight:600;color:#888780;display:block;text-align:right;line-height:1;margin-bottom:2px;}
 .ccell.tod .dnum{color:#412402;}
 .ccell.sel .dnum{color:#0F6E56;}
-.echip{font-size:10px;font-weight:600;padding:2px 4px;border-radius:3px;border-left:3px solid;background:var(--color-background-primary);display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:2px;width:100%;color:var(--color-text-secondary);line-height:1.4;}
-.ec-amber{border-color:#EF9F27;} .ec-coral{border-color:#D85A30;} .ec-pink{border-color:#D4537E;}
-.ec-blue{border-color:#378ADD;} .ec-teal{border-color:#1D9E75;} .ec-more{border-color:#888780;}
+.echip{font-size:10px;font-weight:600;padding:2px 4px;border-radius:3px;border-left:3px solid;background:#fff;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;margin-top:2px;width:100%;color:#5F5E5A;line-height:1.4;}
+.ec-amber{border-color:#EF9F27;}.ec-coral{border-color:#D85A30;}.ec-pink{border-color:#D4537E;}
+.ec-blue{border-color:#378ADD;}.ec-teal{border-color:#1D9E75;}.ec-more{border-color:#888780;}
 .flabel{font-size:13px;font-weight:600;color:#412402;margin:13px 0 5px;display:block;}
-.inp{width:100%;border:1.5px solid #D3D1C7;border-radius:8px;padding:8px 12px;font-size:14px;font-family:'Outfit',sans-serif;background:#fff;color:var(--color-text-primary);transition:border-color .15s;outline:none;}
+.inp{width:100%;border:1.5px solid #D3D1C7;border-radius:8px;padding:8px 12px;font-size:14px;font-family:'Outfit',sans-serif;background:#fff;color:#2C2C2A;transition:border-color .15s;outline:none;}
 .inp:focus{border-color:#EF9F27;}
-.ta{min-height:68px;resize:vertical;}
+textarea.inp{min-height:68px;resize:vertical;}
 .chip{background:#F1EFE8;border:1.5px solid #D3D1C7;border-radius:20px;padding:5px 12px;font-size:12px;font-family:'Outfit',sans-serif;font-weight:500;color:#5F5E5A;cursor:pointer;transition:all .13s;}
 .chip.on{background:#EF9F27;border-color:#EF9F27;color:#412402;font-weight:600;}
 .chip:hover:not(.on){background:#D3D1C7;}
@@ -84,25 +89,38 @@
 .ferr{font-size:12px;color:#993C1D;background:#FAECE7;border-radius:6px;padding:7px 10px;margin-top:8px;}
 .footer{margin-top:20px;padding-top:12px;border-top:1.5px solid #D3D1C7;font-size:12px;color:#888780;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:6px;}
 .chglink{cursor:pointer;text-decoration:underline;text-underline-offset:2px;color:#854F0B;}
-.exec-badge{background:#412402;color:#FAEEDA;border-radius:20px;padding:2px 10px;font-size:11px;font-weight:600;cursor:pointer;}
+.exec-badge{background:#412402;color:#FAEEDA;border-radius:20px;padding:2px 10px;font-size:11px;font-weight:600;}
 .exec-toggle{font-size:12px;color:#854F0B;cursor:pointer;text-decoration:underline;text-underline-offset:2px;display:inline-block;margin-top:6px;}
-.empty-state{text-align:center;padding:2.5rem 1rem;color:var(--color-text-secondary);}
 .reveal-link{font-size:11px;cursor:pointer;text-decoration:underline;color:#854F0B;margin-left:6px;}
+.empty-state{text-align:center;padding:2.5rem 1rem;color:#888780;}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+@media(max-width:480px){.grid2{grid-template-columns:1fr;}}
 </style>
-<div id="omc"></div>
+</head>
+<body>
+<div class="wrap"><div id="omc"></div></div>
 <script>
-const SK="neu_tnrc_v1", PK="neu_tnrc_pin_v1";
+const DB="https://tnr-calendar-74737-default-rtdb.firebaseio.com";
 const DFPIN="TNRC";
+
+async function dbGet(path){
+  try{const r=await fetch(`${DB}/${path}.json`);return await r.json();}catch(e){return null;}
+}
+async function dbSet(path,value){
+  try{await fetch(`${DB}/${path}.json`,{method:"PUT",headers:{"Content-Type":"application/json"},body:JSON.stringify(value)});}catch(e){}
+}
+
 const TYPES={
-  club_meeting:{label:"Club Meeting",short:"Meeting",card:"ev-amber",badge:"b-amber",chip:"ec-amber"},
-  open_mic_off:{label:"Open Mic · Off Campus",short:"Off-Campus Mic",card:"ev-coral",badge:"b-coral",chip:"ec-coral"},
-  open_mic_on:{label:"Open Mic · On Campus",short:"On-Campus Mic",card:"ev-pink",badge:"b-pink",chip:"ec-pink"},
-  collab_show:{label:"Collab Show",short:"Collab Show",card:"ev-blue",badge:"b-blue",chip:"ec-blue"},
-  afterhours:{label:"Afterhours Show",short:"Afterhours",card:"ev-teal",badge:"b-teal",chip:"ec-teal"},
-  workshop:{label:"Writers Workshop",short:"Workshop",card:"ev-amber",badge:"b-amber",chip:"ec-amber"},
-  social:{label:"Social",short:"Social",card:"ev-pink",badge:"b-pink",chip:"ec-pink"},
-  other:{label:"Other",short:"Other",card:"ev-coral",badge:"b-coral",chip:"ec-coral"},
+  club_meeting:{label:"Club Meeting",card:"ev-amber",badge:"b-amber",chip:"ec-amber"},
+  open_mic_off:{label:"Open Mic · Off Campus",card:"ev-coral",badge:"b-coral",chip:"ec-coral"},
+  open_mic_on:{label:"Open Mic · On Campus",card:"ev-pink",badge:"b-pink",chip:"ec-pink"},
+  collab_show:{label:"Collab Show",card:"ev-blue",badge:"b-blue",chip:"ec-blue"},
+  afterhours:{label:"Afterhours Show",card:"ev-teal",badge:"b-teal",chip:"ec-teal"},
+  workshop:{label:"Writers Workshop",card:"ev-amber",badge:"b-amber",chip:"ec-amber"},
+  social:{label:"Social",card:"ev-pink",badge:"b-pink",chip:"ec-pink"},
+  other:{label:"Other",card:"ev-coral",badge:"b-coral",chip:"ec-coral"},
 };
+
 let S={
   events:[],loading:true,saving:false,
   user:"",nameIn:"",isExec:false,showExecIn:false,execIn:"",execErr:"",
@@ -111,6 +129,7 @@ let S={
         desc:"",maxP:"",isAudition:false,recur:false,freq:"weekly",recurEnd:""},
   err:"",execPin:DFPIN,showPin:false,perfInputs:{}
 };
+
 function uid(){return Date.now().toString(36)+Math.random().toString(36).slice(2);}
 function ft(t){if(!t)return"";const[h,m]=t.split(":").map(Number);return`${h%12||12}:${String(m).padStart(2,"0")} ${h>=12?"PM":"AM"}`;}
 function fd(d){if(!d)return"";const[y,mo,da]=d.split("-").map(Number);return new Date(y,mo-1,da).toLocaleDateString("en-US",{weekday:"short",month:"short",day:"numeric"});}
@@ -118,11 +137,22 @@ function tds(y,m,d){return`${y}-${String(m+1).padStart(2,"0")}-${String(d).padSt
 function today(){const n=new Date();return tds(n.getFullYear(),n.getMonth(),n.getDate());}
 function upcoming(){const now=Date.now();return[...S.events].filter(e=>e.date&&e.time&&new Date(e.date+"T"+e.time).getTime()>=now).sort((a,b)=>new Date(a.date+"T"+a.time)-new Date(b.date+"T"+b.time));}
 function genDates(s,f,e){const d=[];let c=new Date(s+"T12:00:00");const en=new Date(e+"T12:00:00");while(c<=en&&d.length<60){d.push(tds(c.getFullYear(),c.getMonth(),c.getDate()));if(f==="weekly")c.setDate(c.getDate()+7);else if(f==="biweekly")c.setDate(c.getDate()+14);else c.setMonth(c.getMonth()+1);}return d;}
+
 async function load(){
-  try{const r=await window.storage.get(SK,true);if(r)S.events=JSON.parse(r.value);const pr=await window.storage.get(PK,true);if(pr)S.execPin=pr.value;}catch(e){S.events=[];}
+  try{
+    const evs=await dbGet("events");
+    if(evs&&Array.isArray(evs))S.events=evs;
+    const pin=await dbGet("execpin");
+    if(pin&&typeof pin==="string")S.execPin=pin;
+  }catch(e){}
   S.loading=false;render();
 }
-async function save(ev){try{await window.storage.set(SK,JSON.stringify(ev),true);}catch(e){}}
+
+async function persist(evs){
+  S.saving=true;render();
+  await dbSet("events",evs);
+  S.saving=false;render();
+}
 
 function evCard(e){
   const T=TYPES[e.type]||TYPES.other;
@@ -158,8 +188,8 @@ function evCard(e){
     <span class="tbadge ${T.badge}">${T.label}</span>
     <div class="ev-name">${e.name}</div>
     <div class="ev-meta">
-      <span><i class="ti ti-clock" style="font-size:12px;vertical-align:-1px;" aria-hidden="true"></i> ${fd(e.date)} at ${ft(e.time)}</span>
-      <span><i class="ti ti-map-pin" style="font-size:12px;vertical-align:-1px;" aria-hidden="true"></i> ${e.venue}${e.address?" · "+e.address:""}</span>
+      <span><i class="ti ti-clock" style="font-size:12px;vertical-align:-1px;"></i> ${fd(e.date)} at ${ft(e.time)}</span>
+      <span><i class="ti ti-map-pin" style="font-size:12px;vertical-align:-1px;"></i> ${e.venue}${e.address?" · "+e.address:""}</span>
     </div>
     ${e.desc?`<div class="ev-desc">${e.desc}</div>`:""}
     ${perfSec}
@@ -170,7 +200,7 @@ function evCard(e){
     </div>
     <div class="adder">
       <span>Added by ${e.addedBy}${e.isAudition?" · Audition only":""}</span>
-      ${S.isExec?`<button class="del-btn" data-a="del" data-id="${e.id}"><i class="ti ti-trash" style="font-size:12px;vertical-align:-1px;" aria-hidden="true"></i> Delete</button>`:""}
+      ${S.isExec?`<button class="del-btn" data-a="del" data-id="${e.id}"><i class="ti ti-trash" style="font-size:12px;vertical-align:-1px;"></i> Delete</button>`:""}
     </div>
   </div>`;
 }
@@ -199,9 +229,9 @@ function calHTML(){
     </div>`;
   }
   return`<div class="cal-hdr">
-    <button class="cal-nav" id="pmB"><i class="ti ti-chevron-left" aria-hidden="true"></i></button>
+    <button class="cal-nav" id="pmB">&#8249;</button>
     <span class="cal-mname">${mn}</span>
-    <button class="cal-nav" id="nmB"><i class="ti ti-chevron-right" aria-hidden="true"></i></button>
+    <button class="cal-nav" id="nmB">&#8250;</button>
   </div>${g}${sel}`;
 }
 
@@ -211,18 +241,18 @@ function formHTML(){
     <span class="flabel" style="margin-top:0;">Event name *</span>
     <input class="inp" type="text" placeholder="e.g. Tuesday Open Mic at ImprovBoston" value="${f.name}" data-f="name">
     <span class="flabel">Event type</span>
-    <div style="display:flex;gap:6px;flex-wrap:wrap;">
+    <div style="display:flex;gap:6px;flex-wrap:wrap;margin-bottom:4px;">
       ${Object.entries(TYPES).map(([k,v])=>`<button class="chip${f.type===k?" on":""}" data-type="${k}">${v.label}</button>`).join("")}
     </div>
     <span class="flabel">Venue *</span>
     <input class="inp" type="text" placeholder="e.g. The Comedy Studio" value="${f.venue}" data-f="venue">
     <span class="flabel">Address</span>
     <input class="inp" type="text" placeholder="e.g. 1 Kendall Sq, Cambridge" value="${f.address}" data-f="address">
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+    <div class="grid2">
       <div><span class="flabel">Date *</span><input class="inp" type="date" value="${f.date}" data-f="date" min="${today()}"></div>
       <div><span class="flabel">Time *</span><input class="inp" type="time" value="${f.time}" data-f="time"></div>
     </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:end;margin-top:0;">
+    <div class="grid2" style="align-items:end;">
       <div><span class="flabel">Max performers</span><input class="inp" type="number" placeholder="Unlimited" value="${f.maxP}" data-f="maxP" min="1" max="50"></div>
       <div style="padding-bottom:9px;">
         <label style="display:flex;align-items:center;gap:8px;cursor:pointer;font-size:13px;font-weight:600;color:#412402;">
@@ -247,7 +277,7 @@ function formHTML(){
       <input class="inp" type="date" value="${f.recurEnd}" data-f="recurEnd" min="${f.date||today()}" style="width:200px;">
     </div>`:""}
     <span class="flabel">Notes</span>
-    <textarea class="inp ta" placeholder="Format, sign-up details, cover charge..." data-f="desc">${f.desc}</textarea>
+    <textarea class="inp" placeholder="Format, sign-up details, cover charge..." data-f="desc">${f.desc}</textarea>
     ${S.err?`<div class="ferr">${S.err}</div>`:""}
     <div style="display:flex;gap:8px;margin-top:16px;">
       <button class="sub-btn" id="subBtn" ${S.saving?"disabled":""}>${S.saving?"Saving...":f.recur?"Add recurring event":"Add event"}</button>
@@ -259,16 +289,17 @@ function formHTML(){
 function render(){
   const root=document.getElementById("omc");
   if(!root)return;
-  if(S.loading){root.innerHTML=`<div style="text-align:center;padding:3rem;font-family:'Outfit',sans-serif;color:#888780;">Loading...</div>`;return;}
+  if(S.loading){root.innerHTML=`<div class="empty-state">Loading...</div>`;return;}
   if(!S.user){
-    root.innerHTML=`<div class="hdr" style="max-width:420px;margin:1rem auto;">
+    root.innerHTML=`<div class="hdr" style="max-width:420px;margin:2rem auto;">
       <div class="hdr-title">NEU Times New Roman Club</div>
-      <div class="hdr-sub" style="margin-top:3px;margin-bottom:18px;">Events Calendar — Club Meetings, Open Mics, Collabs & More</div>
+      <div class="hdr-sub" style="margin-top:3px;margin-bottom:18px;">Events Calendar — Club Meetings, Open Mics, Collabs &amp; More</div>
       <span class="flabel" style="margin-top:0;color:#854F0B;">Your name (shown on sign-ups)</span>
       <input class="inp" type="text" id="nIn" placeholder="e.g. Mary Jane" value="${S.nameIn}" style="margin-bottom:10px;" autocomplete="off">
-      ${S.showExecIn?`<span class="flabel" style="color:#854F0B;">Exec access code</span>
-        <input class="inp" type="password" id="execIn" placeholder="Enter code..." value="${S.execIn}" style="margin-bottom:4px;">
-        ${S.execErr?`<div style="font-size:12px;color:#993C1D;margin-bottom:6px;">${S.execErr}</div>`:""}`
+      ${S.showExecIn
+        ?`<span class="flabel" style="color:#854F0B;">Exec access code</span>
+          <input class="inp" type="password" id="execIn" placeholder="Enter code..." value="${S.execIn}" style="margin-bottom:4px;">
+          ${S.execErr?`<div style="font-size:12px;color:#993C1D;margin-bottom:6px;">${S.execErr}</div>`:""}`
         :`<div><span class="exec-toggle" id="execToggle">Exec team? Enter access code</span></div>`}
       <button class="sub-btn" id="goBtn" style="margin-top:10px;">Sign up for events</button>
     </div>`;
@@ -286,26 +317,23 @@ function render(){
   root.innerHTML=`
     <div class="hdr">
       <div class="hdr-title">NEU Times New Roman Club</div>
-      <div class="hdr-sub">Events Calendar — Club Meetings, Open Mics, Collabs & More</div>
+      <div class="hdr-sub">Events Calendar — Club Meetings, Open Mics, Collabs &amp; More</div>
     </div>
     <div class="tabs">
       <div class="tab-group">
-        <button class="tab${S.view==="list"?" on":""}" data-v="list"><i class="ti ti-list" style="font-size:12px;vertical-align:-1px;" aria-hidden="true"></i> Upcoming</button>
-        <button class="tab${S.view==="cal"?" on":""}" data-v="cal"><i class="ti ti-calendar" style="font-size:12px;vertical-align:-1px;" aria-hidden="true"></i> Calendar</button>
+        <button class="tab${S.view==="list"?" on":""}" data-v="list"><i class="ti ti-list" style="font-size:12px;vertical-align:-1px;"></i> Upcoming</button>
+        <button class="tab${S.view==="cal"?" on":""}" data-v="cal"><i class="ti ti-calendar" style="font-size:12px;vertical-align:-1px;"></i> Calendar</button>
       </div>
       ${S.isExec?`<button class="add-btn${S.view==="add"?" on":""}" data-v="add">+ Add event</button>`:""}
     </div>
     <div id="content">
-      ${S.view==="list"?`<div>${up.length?up.map(evCard).join(""):`<div class="empty-state"><i class="ti ti-calendar-off" style="font-size:32px;display:block;margin-bottom:8px;color:#D3D1C7;" aria-hidden="true"></i>No upcoming events.<br><span style="font-size:13px;">${S.isExec?"Add one above.":"Check back soon."}</span></div>`}</div>`:""}
+      ${S.view==="list"?`<div>${up.length?up.map(evCard).join(""):`<div class="empty-state"><i class="ti ti-calendar-off" style="font-size:32px;display:block;margin-bottom:8px;color:#D3D1C7;"></i>No upcoming events.<br><span style="font-size:13px;">${S.isExec?"Add one above.":"Check back soon."}</span></div>`}</div>`:""}
       ${S.view==="cal"?`<div>${calHTML()}</div>`:""}
       ${S.view==="add"&&S.isExec?`<div style="padding:2px 0;">${formHTML()}</div>`:""}
     </div>
     <div class="footer">
-      <span>Signed in as <strong>${S.user}</strong> · <span class="chglink" id="chg">change</span>${S.saving?" · Saving...":""}</span>
-      ${S.isExec?`<span>
-        <span class="exec-badge" id="pinToggle">Exec</span>
-        ${S.showPin?`<span style="font-size:11px;margin-left:6px;color:#854F0B;font-weight:600;">Code: ${S.execPin}</span>`:`<span class="reveal-link" id="revealPin">reveal code</span>`}
-      </span>`:""}
+      <span>Signed in as <strong>${S.user}</strong> &nbsp;&middot;&nbsp; <span class="chglink" id="chg">change</span>${S.saving?" &nbsp;&middot;&nbsp; Saving...":""}</span>
+      ${S.isExec?`<span><span class="exec-badge">Exec</span>${S.showPin?`<span style="font-size:11px;margin-left:8px;color:#854F0B;font-weight:600;">Code: ${S.execPin}</span>`:`<span class="reveal-link" id="revealPin">reveal code</span>`}</span>`:""}
     </div>`;
 
   root.querySelectorAll("[data-v]").forEach(b=>b.addEventListener("click",()=>{S.view=b.dataset.v;S.err="";render();}));
@@ -336,12 +364,12 @@ function tryGo(){
 
 async function doAction(eid,action){
   if(action==="del"&&S.isExec){
-    const u=S.events.filter(e=>e.id!==eid);S.events=u;render();save(u);return;
+    const u=S.events.filter(e=>e.id!==eid);S.events=u;render();await persist(u);return;
   }
   if(action==="addperf"&&S.isExec){
     const nm=(S.perfInputs[eid]||"").trim();if(!nm)return;
     const u=S.events.map(e=>{if(e.id!==eid)return e;const p=[...(e.performers||[])];if(!p.includes(nm))p.push(nm);return{...e,performers:p};});
-    S.events=u;S.perfInputs[eid]="";render();save(u);return;
+    S.events=u;S.perfInputs[eid]="";render();await persist(u);return;
   }
   const u=S.events.map(e=>{
     if(e.id!==eid)return e;
@@ -350,7 +378,7 @@ async function doAction(eid,action){
     else{const i=a.indexOf(S.user);if(i>=0)a.splice(i,1);else a.push(S.user);}
     return{...e,performers:p,attendees:a};
   });
-  S.events=u;render();save(u);
+  S.events=u;render();await persist(u);
 }
 
 async function doAdd(){
@@ -364,8 +392,10 @@ async function doAdd(){
   S.events=all;
   S.form={name:"",type:"club_meeting",venue:"",address:"",date:"",time:"",desc:"",maxP:"",isAudition:false,recur:false,freq:"weekly",recurEnd:""};
   S.err="";S.view="list";
-  render();save(all);
+  render();await persist(all);
 }
 
 render();load();
 </script>
+</body>
+</html>
